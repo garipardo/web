@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    font-family: "fredoka", sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    background-color: gray;
+
+}
+
+#kids{
+    background-image: url(fotor-ai-20241008101729.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#kids::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+.kids-section-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 85vh;
+    width: 85%;
+    border-radius: 30px;
+    border: 2px solid rgba(211, 211, 211, 0.2);
+    backdrop-filter: blur(8px);
+
+}
+/* header */ 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 10px;
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.logo span{
+    color: rgb(0, 225, 255);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    bottom: -10;
+    height: 2px;
+    width: 80%;
+    box-shadow: 0 0 5px white;
+    transform: scaleX(0) translateY(-100%);
+    background-color: white;
+    transition: 0.5s;
+}
+nav a:hover::after{
+    transform: scaleX(0.5) translateY(0);
+}
+.active{
+    color: rgb(0, 225, 255);
+}
+.active::after{
+    background-color:rgb(0, 225, 255);
+}
+header button{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    transition: 0,3s;
+    cursor: pointer;
+    
+}
+
+header button:hover{
+    background-color:rgb(0, 225, 255);
+    color: rgba(0, 0, 0, 0.6);
+    border-color: rgb(0, 225, 255);
+}
